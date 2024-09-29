@@ -47,7 +47,7 @@ function Signup (){
         )}
     </div>
     <div className="flex justify-around mt-4">
-        <button className="bg-purple-300 px-3 py-1 hover:bg-purple-400 rounded-md" type="submit">Signup</button>
+        <button className="bg-purple-300 px-3 py-1 hover:bg-violet-400 rounded-md" type="submit">Signup</button>
         <p className="text-xl">
             Have account? <button to="/" className="underline text-violet-500 cursor-pointer" type="sumbit" onClick={()=> document.getElementById("my_modal_3").showModal()}>
             Login
