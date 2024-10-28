@@ -8,12 +8,14 @@ function Banner (){
         <div className="space-y-6">
         <h1 className="text-4xl font-bold">Hello, Get Started with Book Collecting{" "}
         <span className="text-pink-700"> What To Read Next!!!</span></h1>
+        
         <p className="text-xl">
         Welcome to our ultimate guide on book collecting! Whether you’re an avid reader or 
         a budding bibliophile, this guide will help you start and grow your own book collection. 
         Book collecting is more than just buying books; it’s about curating a collection that 
         reflects your personal interests and passions.
         </p>
+        
         <label className="input input-bordered flex items-center gap-2">
         <svg
         xmlns="http://www.w3.org/2000/svg"

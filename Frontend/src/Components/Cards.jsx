@@ -20,10 +20,14 @@ function Cards({ item }) {
               {item.name}
               <div className="badge bg-primary-content">{item.category}</div>
             </h2>
+            <h1 className="text-2xl md:text-2xl text-base-400">{item.author}</h1>
             <p>{item.title}</p>
-            <div className="card-actions justify-between">
+            {/*<p>{item._id}</p>*/}
+            <div className="card-actions justify-between mt-4">
               <div className="badge badge-outline cursor-pointer p-3 rounded-lg border-[2px] hover:bg-error hover:text-white duration-200">
+                <a href={item.url}>
                 Get started
+                </a>
               </div>
             </div>
           </div>

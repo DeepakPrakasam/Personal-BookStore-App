@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Bookcollection from "../Components/Bookcollection";
 import Footer from "../Components/Footer";
-import list from "../../src/list.json";
 
 function Collectionbook (){
   return(
@@ -19,3 +18,4 @@ function Collectionbook (){
 }
 
 export default Collectionbook ;
+ 
