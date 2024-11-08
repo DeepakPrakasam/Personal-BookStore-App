@@ -107,7 +107,7 @@ function Bookcollection() {
         {/* Recently Viewed Books */}
         {recentlyViewed.length > 0 && (
           <div className="mt-6">
-            <h2 className="text-xl md:text-3xl text-violet-400 text-center mb-4">Recently Viewed Books</h2>
+            <h2 className="text-xl md:text-3xl p-3 bg-gradient-to-r from-indigo-500 ... text-purple-600 text-center mb-4">Recently Viewed Books</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {recentlyViewed.map((item) => (
                 <div key={item._id} onClick={() => handleBookClick(item)}>
@@ -121,7 +121,7 @@ function Bookcollection() {
         {/* Display Books Based on Selected Category */}
         {categoryBooks.length > 0 && selectedCategory && (
           <div className="mt-6">
-            <h2 className="text-xl md:text-3xl text-violet-400 text-center mb-4">
+            <h2 className="text-xl md:text-3xl bg-gradient-to-r from-indigo-500 via-rose-500 to-fuchsia-500 ... p-3 text-center mb-4">
               Since You Searched For {selectedCategory}...
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -137,7 +137,7 @@ function Bookcollection() {
         {/* Display Saved Books ("Read Later") */}
         {readLaterBooks.length > 0 && (
           <div className="mt-6">
-            <h2 className="text-xl md:text-3xl text-violet-400 text-center mb-4">Your Saved Books</h2>
+            <h2 className="text-xl md:text-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... p-3 text-purple-800 text-center mb-4">Your Saved Books</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {readLaterBooks.map((item) => (
                 <div key={item._id}>
@@ -150,7 +150,7 @@ function Bookcollection() {
 
         {/* All Filtered Books */}
         <div className="mt-8">
-          <h2 className="text-xl md:text-3xl text-violet-400 text-center mb-4">Book Collection</h2>
+          <h2 className="text-xl md:text-3xl bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ... p-3 text-blue-700 text-center mb-4">Book Collection</h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-6">
             {filteredBooks.map((item) => (
               <div key={item._id} onClick={() => handleBookClick(item)}>

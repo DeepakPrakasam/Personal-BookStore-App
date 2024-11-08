@@ -25,7 +25,7 @@ function Cards({ item, onLikeToggle, isLiked }) {
 
   return (
     <div className="mt-4 p-3 my-3">
-      <div className="card bg-base-100 w-92 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
+      <div className="card bg-base-100 w-92 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border rounded-lg ...">
         <figure className="h-80 overflow-hidden">
           <img
             src={item.image}
@@ -36,7 +36,7 @@ function Cards({ item, onLikeToggle, isLiked }) {
         <div className="card-body h-40 overflow-y-auto scrollbar-thin dark:bg-slate-900">
           <h2 className="card-title">
             {item.name}
-            <div className="text-sm md:text-lg bg-primary-content rounded-full px-2 py-1 w-max">
+            <div className="badge bg-primary-content">
               {item.category}
             </div>
           </h2>
@@ -52,8 +52,8 @@ function Cards({ item, onLikeToggle, isLiked }) {
             </div>
             {/* Like button to toggle Save to Read Later */}
             <div
-              className={`badge badge-outline cursor-pointer p-3 rounded-lg border-[2px] hover:bg-success hover:text-white duration-200 ${
-                isLiked ? "bg-success text-white" : ""
+              className={`badge badge-outline cursor-pointer p-3 rounded-lg border-[2px] hover:bg-accent-content hover:text-white duration-200 ${
+                isLiked ? " bg-blue-500 text-white" : ""
               }`}
               onClick={handleLikeClick}
             >
