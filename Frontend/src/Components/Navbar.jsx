@@ -39,7 +39,7 @@ const Navbar = () => {
       <li><a href="/collection">Collection</a></li>
       {authUser && <li><a href="/admin">Admin Panel</a></li>}
       <li><a>Contact</a></li>
-      <li><a>About</a></li>
+      <li><a href="/about">About</a></li>
     </>
   );
 

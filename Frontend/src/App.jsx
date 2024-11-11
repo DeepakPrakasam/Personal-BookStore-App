@@ -8,6 +8,8 @@ import { useAuth } from "./Context/Authuprovider";
 import AdminPanel from "./AdminPanel";
 import EditBook from "./Components/EditBook";
 import DeleteBook from "./Components/DeleteBook";
+import About from "./Components/About";
+import Aboutbookstore from "./Collection/Aboutbookstore";
 
 function App (){
   const [authUser, setAuthUser] = useAuth();
@@ -24,6 +26,7 @@ function App (){
         <Route path="/edit" element={<EditBook />} /> 
         <Route path="/delete" element={<DeleteBook/>} />
         <Route path="/collection" element={<Collectionbook />}/>
+        <Route path="/about" element={<Aboutbookstore/>}/>
       </Routes>
       <Toaster />
     </div>
